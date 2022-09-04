@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header>
+        <div class="shopInf">
+            <h1 id="fhe">sneakers </h1>
+            <div id="menuu" >
+                <img id="menu"  src="./images/icon-menu.svg" alt="">
+            </div>
+            <nav>
+                
+                <a href="#">Collections </a>
+                <a href="#">Men</a>
+                <a href="#">Women </a>
+                <a href="#">About </a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+        <div class="perInf">
+            <div class="shopp">
+                <span class="material-symbols-outlined" id="shp">
+                    shopping_cart
+                    </span>
+                    <div class="notf">
+                        <h1 id="numP"></h1>
+                    </div>
+            </div>
+            <div class="profile">
+                <img src="./images/image-avatar.png"  srcset="">
+            </div>
+        </div>
+        <div id="panier" class="hide">
+            <div class="tit"><h2>Cart</h2></div>
+            <hr>
+            <div id="empt" >Your Cart is empty</div>
+            <div id="bust" >
+                <div class="edi">
+                    <div class="pict">
+                        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="disc">
+                        Fall Limited Sneakrs $125.00 x <span id="NumRep">3</span> <span id="darkk">$375</span>
+                    </div>
+                    <div class="sup">
+                        <span class="material-symbols-outlined" id="remo">
+                            delete
+                            </span>
+                    </div>
+                </div>
+                <button id="check">Chekout</button>
+
+            </div>
+            
+        </div>
+
+    </header>
+    
+    <div class="content">
+        
+        <div class="product">
+            <div class="bigP">
+                <img src="./images/image-product-1.jpg" name="big" id="im0" srcset="">
+            </div>
+            <div class="smalP">
+                <img src="./images/image-product-1-thumbnail.jpg"  id="im1" >
+                <img src="./images/image-product-2-thumbnail.jpg"  id="im2" >
+                <img src="./images/image-product-3-thumbnail.jpg"  id="im3" >
+                <img src="./images/image-product-4-thumbnail.jpg"  id="im4" >
+            </div>
+        </div>
+        <div class="discription">
+            <p id="p1">Sneaker Company</p>
+            <p id="p5">Fall Limited Edition Sneakers</p>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer</p>
+            <p id="p6">$125.00  <span>50%</span></p> 
+            <p id="p2">$250.00</p>
+            <div class="controle">
+                <div class="count">
+                    <span id="sub">-</span>
+                    <span id="num">0</span>
+                    <span id="plus">+</span>
+    
+                </div>
+                <button id='add'><span class="material-symbols-outlined">shopping_cart</span>Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div id="checkIm" class="hide">
+        <div class="close">
+            <img src="./images/icon-close.svg" id="cls">
+        </div>
+        <div class="bigP" id="bigP1">
+            <img src="./images/icon-previous.svg" id="prev">
+            <img src="./images/image-product-1.jpg" name="big" id="im5" srcset="">
+            <img src="./images/icon-next.svg" id="nxt">
+        </div>
+        <div class="smalP" id="smalP1">
+            <img src="./images/image-product-1-thumbnail.jpg"  id="im6" >
+            <img src="./images/image-product-2-thumbnail.jpg"  id="im7" >
+            <img src="./images/image-product-3-thumbnail.jpg"  id="im8" >
+            <img src="./images/image-product-4-thumbnail.jpg"  id="im9" >
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

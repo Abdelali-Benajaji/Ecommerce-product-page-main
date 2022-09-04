@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+header{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 400px; 
+    border-bottom: solid rgb(174, 174, 174) 1px;
+    padding: 20px 0px ;
+    
+
+}
+.shopInf{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.perInf{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a{
+    font-size: 1em;
+    color: rgb(174, 174, 174);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: ease;
+    font-weight: bold;
+    padding-bottom: 36px;
+}
+.perInf img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.shopp span{
+    cursor: pointer;
+}
+.shopp{
+    display: flex;
+}
+.notf{
+    
+    padding-bottom:20px;
+    text-align: center;
+    height: 15px;
+    width: 19px;
+    font-size: 8px;
+    margin-left: -7px;
+    font-weight: bold;
+    color: white;
+    
+    display: none;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 50%;
+} 
+nav{
+    visibility: visible;
+}
+nav a:hover{
+    color:black;
+    font-weight: bold;
+    border-bottom: 3px hsl(26, 100%, 55%) solid;
+}
+.perInf img:hover{
+    border-radius: 50%;
+    border: 2px hsl(26, 100%, 55%) solid;
+}
+.shopp span:hover{
+    font-weight: bold;
+}
+.content{
+    top: 100px;
+    display: flex;
+    padding:50px 20px  ;
+    gap:100px;
+    position: absolute;
+    justify-content: center;
+}
+.bigP {
+    width: 60%;
+    
+}
+.bigP img{
+    width: 450px;
+    height: 450px;
+    border-radius: 15px;
+}
+.smalP{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.smalP img{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+.discription{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    padding: 45px 0px 0px 35px;
+}
+
+.discription p{
+    font-weight:300;
+    color: gray;
+    font-size: 16px;
+}
+.discription #p1{
+    color:orange;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.discription #p5{
+    font-weight:bolder;
+    color: black;
+    font-size: 2em;
+}
+.discription #p6{
+    font-weight:bolder;
+    color: black;
+    font-size: 1.3em;
+}
+#p6 span{
+    font-size: 0.6em;
+    padding: 3px;
+    color: hsl(26, 100%, 55%);
+    margin-left: 7px;
+    background-color: hsla(26, 100%, 55%, 0.132);
+}
+#p2{
+    font-weight:bolder;
+    text-decoration: line-through;
+    margin-top: -15px;
+}
+.controle{
+    display: flex;
+    gap: 15px;
+}
+.count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(174, 174, 174, 0.218) ;
+    border-radius: 10px;
+    padding: 7px 15px;
+    width: 35%;
+}
+.count #sub{
+    color:hsl(26, 100%, 55%) ;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.count #plus{
+    color:hsl(26, 100%, 55%) ;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.count #num{
+    color:black ;
+    font-size: 1em;
+    font-weight: bold;
+}
+button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(26, 100%, 55%) ;
+    border-radius: 10px;
+    padding: 7px;
+    width: 65%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    
+}
+#im1:hover{
+    opacity: 70%;
+    border: 1px hsl(26, 100%, 55%) solid;
+
+}
+#im2:hover{
+    opacity: 70%;
+    border: 1px hsl(26, 100%, 55%) solid;
+
+}
+#im3:hover{
+    opacity: 70%;
+    border: 1px hsl(26, 100%, 55%) solid;
+
+}
+#im4:hover{
+    opacity: 70%;
+    border: 1px hsl(26, 100%, 55%) solid;
+
+}
+#panier{
+    position: absolute;
+    z-index: 99;
+    height: 200px;
+    width: 300px;
+    right: -50px;
+    top: 74px;
+    background-color: white;
+    -webkit-box-shadow: -3px 9px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 9px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: -3px 9px 19px 0px rgb(174, 174, 174,0.75);
+
+    border-radius: 10px;
+}
+.tit{
+    padding: 10px ;
+}
+#empt{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+    font-size: 1em;
+    color: rgb(174, 174, 174);
+    
+    font-weight: bold;
+}
+.hide{
+    display: none;
+}
+#bust{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    display: none;
+}
+.edi{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 15px 10px;
+}
+#bust img{
+    height: 50px;
+    width: 50px;
+    
+}
+.disc{
+    font-size: 0.9em;
+    color: rgb(174, 174, 174);
+    padding-left: 10px;
+}
+#check{
+    margin: auto;
+    width: 90%;
+    height: 50px;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}
+#darkk{
+    font-weight: bold;
+    color: black;
+}
+/* header,.content{
+    
+    opacity: 10%;
+    
+} */
+
+#checkIm{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    opacity: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+#bigP1{
+    display: flex;
+    align-items: center;
+}
+#smalP1{
+    display: flex;
+    justify-content: center;
+}
+#prev{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+#prev img:hover{
+    color: hsl(26, 100%, 55%);
+}
+#nxt img:hover{
+    color: hsl(26, 100%, 55%);
+}
+#nxt{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    
+}
+.close{
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+#cls{
+    width: 30px;
+    height: 30px;
+}
+#menuu{
+    margin-left: 15px;
+    
+}
+#menuu img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    
+}
+#cllls img{
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:1300px){
+    header{
+        gap: 350px;
+    }
+}
+@media screen and (max-width:1214px){
+    header{
+        gap: 300px;
+    }
+}
+@media screen and (max-width:1156px){
+    header{
+        gap: 150px;
+    }
+}
+@media screen and (max-width:988px){
+    header{
+        gap: 100px;
+    }
+}
+@media screen and (max-width:945px){
+    header{
+        gap: 50px;
+        
+    }
+    .content{
+        gap: 50px;
+    }
+    .count{
+        width: 50%;
+    }
+    button{
+        width: 50%;
+    }
+    .bigP img{
+        width: 380px;
+        height: 380px;
+    }
+    .smalP img{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width:880px){
+    header{
+        
+        gap: 30px;
+        
+    }
+    .content{
+        gap: 20px;
+    }
+    .panier{
+        right: 0px;
+    }
+    
+}
+@media screen and (max-width:806px){
+    header{
+        justify-content: space-evenly;
+        padding: 5px 0px ;
+        width: 100%;
+        z-index: 77;
+    }
+     .shopInf{
+        
+        flex-direction: row-reverse;
+        
+    }
+    
+    .shopInf h1{
+        padding-left: 47px;
+        
+    }
+    
+    .perInf{
+        
+        gap: 15px;
+    }
+    nav{
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 50px;
+        top: 50px;
+        z-index: 99999;
+        background-color: white;
+        width: 50%;
+        height: 900px;
+        padding: 19px;
+        left: 0px;
+        
+        
+
+    }
+    
+    nav a{
+        color: black;
+        font-size: 1.3em;
+        display: block;
+        
+    }
+    nav a:hover{
+        color:black;
+        font-weight: bold;
+        border-bottom: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        top: 65px;
+        padding: 0px;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .bigP {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .bigP img{
+        width: 80%;
+        
+        height: 450px;
+        border-radius: 10px;
+    }
+     .smalP{
+        display: none;
+    }
+    .discription{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+        padding: 0px 30px;
+    } 
+    #panier{
+
+        height: 400px;
+        width: 90%;
+        right: 30px;
+        top: 94px;
+        font-size: 2em;
+        
+    }
+    #empt{
+        text-align: center;
+    }
+    #bust{
+        
+        padding: 25px 30px;
+        
+    }
+    .edi{
+        
+        /* flex-wrap: wrap; */
+        padding: 15px 10px;
+    }
+    #bust img{
+        height: 80px;
+        width: 80px;
+        
+    }
+    
+    #check{
+        margin: auto;
+        width: 90%;
+        height: 80px;
+    }
+    #menuu img{
+        visibility: visible;
+        
+    }
+    
+    
+}
+/* #clls {
+    display: none;
+    
+} */
+.vsbl{
+    visibility: visible;
+}
+@media screen and (max-width:600px){
+    .bigP {
+        width: 100%;
+       
+    }
+    .bigP img{
+        width: 100%;
+        
+        height: 450px;
+        border-radius: 0px;
+    }
+}
